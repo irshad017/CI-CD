@@ -1,4 +1,4 @@
-name: Build It and Deploy to Docker Hub
+name: Build and Deploy to Docker Hub
 
 on:
   push:
@@ -9,7 +9,7 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
-    - name: Check Out my Repo
+    - name: Check Out Repo
       uses: actions/checkout@v2
 
     - name: Log in to Docker Hub
